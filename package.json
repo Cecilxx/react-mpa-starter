@@ -8,6 +8,16 @@
     "dev": "webpack-dev-server",
     "build": "rm -rf dist/ && cd build && webpack --config webpack.prod.js"
   },
+   "keywords": [
+    "react",
+    "react router",
+    "mpa",
+    "multiple",
+    "pages",
+    "application",
+    "webpack",
+    "multiple pages application"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
