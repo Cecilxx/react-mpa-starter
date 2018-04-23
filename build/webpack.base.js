@@ -17,10 +17,9 @@ const base = {
   entry,
 
   output: {
-    path: path.join(__dirname, '../dist'), // 输出目录的配置，模板、样式、脚本、图片等资源的路径配置都相对于它
+    path: path.join(__dirname, '../dist'),
     publicPath: '/',
-    filename: '[name]/index.js' // 每个页面对应的主js的生成配置
-    // chunkFilename: 'js/[id].chunk.js' // chunk生成的配置
+    filename: '[name]/index.js'
   },
 
   resolve: {
@@ -51,34 +50,7 @@ const base = {
     ]
   },
 
-  plugins: [
-    /*
-    ******************重要******************
-    **单独使用link标签加载css并设置路径，相对于output配置中的publickPath
-    */
-    /*
-    ******************重要******************
-    */
-    // new HtmlWebpackPlugin({
-    //   filename: './home/index.html', // 生成的html存放路径
-    //   template: '../src/Pages/Home/index.html',
-    //   chunks: ['vendor', 'home'] // 需要引入的chunk，不配置就会引入所有页面的资源
-    // }),
-    // new HtmlWebpackPlugin({
-    //   filename: './about/index.html',
-    //   template: '../src/Pages/About/index.html',
-    //   chunks: ['vendor', 'about']
-    // })
-  ],
-
-  // //使用webpack-dev-server，提高开发效率
-  devServer: {
-    contentBase: '../dist',
-    host: 'localhost',
-    port: 9090, // 默认8080
-    inline: true, // 可以监控js变化
-    hot: true // 热启动
-  }
+  plugins: []
 }
 
 pagesArray.forEach(page => {
@@ -87,10 +59,9 @@ pagesArray.forEach(page => {
     template: page.template,
     filename: page.filename,
     chunks: ['vendor', page.chunkName],
-    // hash:true,
     minify: {
       removeComments: true,
-      collapseWhitespace: false // 删除空白符与换行符
+      collapseWhitespace: false
     }
   })
   base.plugins.push(htmlPlugin)

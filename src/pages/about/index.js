@@ -1,4 +1,4 @@
 import './index.css'
 import '../../Common/apply'
 
-alert('进入Page页成功')
+console.log('进入about页成功')

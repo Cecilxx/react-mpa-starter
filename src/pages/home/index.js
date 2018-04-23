@@ -1,4 +1,4 @@
 import './index.css'
 import '../../Common/apply'
 
-alert('进入Home页成功')
+console.log('进入Home页成功')

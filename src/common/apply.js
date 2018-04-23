@@ -1,1 +1,1 @@
-console.log('apply')
+console.log('common.js')

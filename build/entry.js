@@ -7,9 +7,9 @@ let entryFiles = {}
 function eachFile (dir) {
   try {
     fs.readdirSync(dir).forEach(function (file) {
-      const file_path = dir + '/' + file
+      const filePath = dir + '/' + file
       const fname = path.basename(file, '.js')
-      entryFiles[fname] = file_path
+      entryFiles[fname] = filePath
     })
   } catch (e) {}
 }
