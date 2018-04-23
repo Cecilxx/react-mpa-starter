@@ -15,7 +15,7 @@
 ```
 npm run dev
 ```
-
+> 默认启动端口：[http://localhost:9090](http://localhost:9090), 输入[http://localhost:9090/home](http://localhost:9090)访问home页
 ## 打包
 
 ```
