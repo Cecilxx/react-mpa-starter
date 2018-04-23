@@ -1,9 +1,5 @@
 const config = {
-  port: '4000',
-  title: {
-    home: 'home',
-    about: 'about'
-  },
+  port: '9090',
   vendor: []
   // postcss: [
   //   require("postcss-cssnext")({
