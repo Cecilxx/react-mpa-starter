@@ -43,21 +43,5 @@ base.plugins.push(
   DefinePlugin
 )
 
-// base.module.rules.push(
-//   {
-//     test: /src(\\|\/)pages(\\|\/)home(\\|\/).*\.css$/,
-//     use: HomeExtractTextPlugin.extract({
-//       fallback: 'style-loader',
-//       use: 'css-loader'
-//     })
-//   },
-//   {
-//     test: /src(\\|\/)pages(\\|\/)about(\\|\/).*\.css$/,
-//     use: AboutExtractTextPlugin.extract({
-//       fallback: 'style-loader',
-//       use: 'css-loader'
-//     })
-//   }
-// )
-
+base.devtool = 'source-map'
 module.exports = base

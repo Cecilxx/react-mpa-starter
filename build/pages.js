@@ -22,6 +22,5 @@ function eachFile (dir) {
   } catch (e) {}
 }
 eachFile(PAGES_PATH)
-// 导出我们需要的html模板信息
 
 module.exports = pagesArray
